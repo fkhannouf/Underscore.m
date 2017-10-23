@@ -24,9 +24,11 @@
 //  IN THE SOFTWARE.
 //
 
-#import <Foundation/Foundation.h>
-#import "Underscore.h"
-#import "USStringWrapper.h"
+#ifndef UNDERSCORE_STRING_H
+#define UNDERSCORE_STRING_H
+
+#include <Underscore/Underscore.h>
+#include <Underscore/USStringWrapper.h>
 
 @interface Underscore (Strings)
 
@@ -47,3 +49,4 @@
 + (NSString *(^)(NSArray *, NSString *))join;
 
 @end
+#endif

@@ -24,11 +24,14 @@
 //  IN THE SOFTWARE.
 //
 
+#ifndef UNDERSCORE
+#define UNDERSCORE
+
 #import <Foundation/Foundation.h>
 
-#import "USConstants.h"
-#import "USArrayWrapper.h"
-#import "USDictionaryWrapper.h"
+#include <Underscore/USConstants.h>
+
+#define _ Underscore
 
 @interface Underscore : NSObject
 
@@ -49,4 +52,14 @@
 
 @end
 
-#import "Underscore+Functional.h"
+#endif
+
+#include <Underscore/USArrayWrapper.h>
+#include <Underscore/USDictionaryWrapper.h>
+#include <Underscore/USStringWrapper.h>
+
+#include <Underscore/Underscore+Functional.h>
+#include <Underscore/Underscore+Strings.h>
+#include <Underscore/Underscore+Times.h>
+
+

@@ -24,7 +24,10 @@
 //  IN THE SOFTWARE.
 //
 
-#import "Underscore.h"
+#ifndef UNDERSCORE_FUNCTIONAL_H
+#define UNDERSCORE_FUNCTIONAL_H
+
+#include <Underscore/Underscore.h>
 
 @interface Underscore (FunctionalStyle)
 
@@ -89,3 +92,4 @@
 + (NSDictionary *(^)(NSDictionary *dictionary, UnderscoreTestBlock block))rejectValues;
 
 @end
+#endif

@@ -24,7 +24,7 @@
 //  IN THE SOFTWARE.
 //
 
-#import "USStringWrapper.h"
+#include <Underscore/USStringWrapper.h>
 
 @interface USStringWrapper ()
 -(id) initWithString:(NSString *)string;

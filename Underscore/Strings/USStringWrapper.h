@@ -24,9 +24,11 @@
 //  IN THE SOFTWARE.
 //
 
-#import <Foundation/Foundation.h>
-#import "Underscore+Functional.h"
-#import "USArrayWrapper.h"
+#ifndef USSTRINGWRAPPER_H
+#define USSTRINGWRAPPER_H
+
+//#include <Underscore/Underscore+Functional.h>
+#include <Underscore/USArrayWrapper.h>
 
 @interface USStringWrapper : NSObject
 
@@ -76,3 +78,5 @@
 @property (readonly) USStringWrapper *(^join)(NSString *joiner);
 
 @end
+
+#endif

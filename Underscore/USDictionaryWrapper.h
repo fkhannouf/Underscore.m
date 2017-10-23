@@ -24,10 +24,13 @@
 //  IN THE SOFTWARE.
 //
 
+#ifndef USDICTIONARYWRAPPER_H
+#define USDICTIONARYWRAPPER_H
+
 #import <Foundation/Foundation.h>
 
-#import "USArrayWrapper.h"
-#import "USConstants.h"
+#import <Underscore/USArrayWrapper.h>
+#import <Underscore/USConstants.h>
 
 @interface USDictionaryWrapper : NSObject
 
@@ -54,3 +57,5 @@
 @property (readonly) USDictionaryWrapper *(^rejectValues)(UnderscoreTestBlock block);
 
 @end
+
+#endif

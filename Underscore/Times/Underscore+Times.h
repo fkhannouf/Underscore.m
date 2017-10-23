@@ -24,10 +24,14 @@
 //  IN THE SOFTWARE.
 //
 
-#import "Underscore.h"
+#ifndef UNDERSCORE_TIMES_H
+#define UNDERSCORE_TIMES_H
+
+#include "Underscore.h"
 
 @interface Underscore (Times)
 
 + (void (^)(NSInteger, UnderscoreIntegerIteratorBlock))times;
 
 @end
+#endif

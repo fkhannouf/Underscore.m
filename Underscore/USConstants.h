@@ -24,6 +24,9 @@
 //  IN THE SOFTWARE.
 //
 
+#ifndef USCONSTANTS_H
+#define USCONSTANTS_H
+
 #import <Foundation/Foundation.h>
 
 typedef BOOL (^UnderscoreTestBlock)(id obj);
@@ -41,3 +44,4 @@ typedef id   (^UnderscoreDictionaryMapBlock)(id key, id obj);
 typedef NSComparisonResult (^UnderscoreSortBlock)(id a, id b);
 
 typedef id<NSCopying> (^UnderscoreGroupingBlock)(id obj);
+#endif

@@ -24,9 +24,12 @@
 //  IN THE SOFTWARE.
 //
 
+#ifndef USARRAYWRAPPER_H
+#define USARRAYWRAPPER_H
+
 #import <Foundation/Foundation.h>
 
-#import "USConstants.h"
+#include <Underscore/USConstants.h>
 
 @class USDictionaryWrapper;
 
@@ -73,3 +76,4 @@
 @property (readonly) USDictionaryWrapper *(^groupBy)(UnderscoreGroupingBlock block);
 
 @end
+#endif
